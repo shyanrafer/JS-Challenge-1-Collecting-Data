@@ -2,10 +2,12 @@
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
-const collectEmployees = function() => {
+const collectEmployees = function() {
   const employees = [];
   
   let addEmployee = true;
+
+  // TODO: Get user input to create and return an array of employee objects
 
   while (addEmployee) {
     const firstName = prompt('Enter employee first name:');
@@ -33,19 +35,29 @@ const collectEmployees = function() => {
 return employees;
 };
 
-// Call the function to collect employee data
-const employeeData = collectEmployees();
-console.log(employeeData);
 
-  }
-  // TODO: Get user input to create and return an array of employee objects
-  prompt(`Input employee name here`)
-}
+
+
+
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+  //Initializes a variable to track total salary of employees
+  let totalSalary = 0
+  //Calculates the total salary of all employees
+  for (let i = 0; i < employeesArray.length; i++) {
+    totalSalary += employeesArray[i].salary;
+  }
+  //Calculates the average salary
+  let averageSalary = totalSalary / employeesArray.length;
+
+  //Then we need to console.log to display the average to the console
+  console.log(`Average salary: $${averageSalary.toFixed(2)}`)
+  //.toFixed(#) tells the browser the amount of decimals we would like to round to for our result.
+  
+  return averageSalary;
 }
+
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
