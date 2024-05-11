@@ -36,11 +36,6 @@ const collectEmployees = function() {
 return employees;
 };
 
-
-
-
-
-
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   //using employeesArray here refers (I believe) to the previous array generated when collecting employee data
