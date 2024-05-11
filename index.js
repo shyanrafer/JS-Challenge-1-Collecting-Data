@@ -8,7 +8,7 @@ const collectEmployees = function() {
   //Tells browseer that whilst data is inputted run a loop until user selects no
   let addEmployee = true;
 
-  // TODO: Get user input to create and return an array of employee objects
+  // TODO: Get user input to create and return an array of employee values (pretty sure its values and they are properties of the collectEmployees const)
   //begins loop
   while (addEmployee) {
     const firstName = prompt('Enter employee first name:');
@@ -27,7 +27,7 @@ const collectEmployees = function() {
     });
 
     const addMore = confirm('Do you want to add another employee?');
-    //This is where if user selects no to add more then tells browswer not true and returns as false 
+    //This is where if user selects no to add more then tells browswer not true and returns as false/takes user to the page 
     if (!addMore) {
         addEmployee = false;
     }
@@ -65,11 +65,15 @@ const displayAverageSalary = function(employeesArray) {
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
-  //Seems the same as the previous task but a bit different in that instead of dividing to acquire an average we are selecting a randomly generated number
-
+  //Seems the same as the previous task but a bit different in that instead of dividing to acquire an average we are selecting a randomly generated name - will have to get the computer to randomly pick a name via the index of names
   
-  let totalEmployees = 0
-
+    // Select a random employee
+    
+    //This kind of converts the names into numbers as well as settles which item from the index to display by multiplying the length of the array by a number between 0 and 1 (math.floor) then rounding to the nearest integer
+    const randomIndex = Math.floor(Math.random() * employeesArray.length);
+    const randomEmployee = employeesArray[randomIndex];
+    //after the name is selected we display it by adding a string with the value Ranom name and a space, then the first name, then a string with just a space, and finally the last name. The first and last name are added by concatenating the variable randomEployee and its paired key (i think) .firstName - same with last name.
+    console.log("Random name: " + randomEmployee.firstName + " " + randomEmployee.lastName);
 }
 
 /*
