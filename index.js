@@ -5,7 +5,7 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 const collectEmployees = function() {
   //Initializes empty array for user to input data
   const employees = [];
-  //Tells browseer that whilst data is inputted run a loop until user selects no
+  //Tells browser that whilst data is inputted run a loop until user selects no
   let addEmployee = true;
 
   // TODO: Get user input to create and return an array of employee values (pretty sure its values and they are properties of the collectEmployees const)
@@ -19,7 +19,7 @@ const collectEmployees = function() {
     while (isNaN(parseFloat(salary))) {
         salary = prompt('Please enter a valid number for salary:');
     }
-    
+    //KEY - pushes the data into the array
     employees.push({
         firstName: firstName,
         lastName: lastName,

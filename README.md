@@ -22,4 +22,8 @@ For the next section, displaying average salary, I started things out by creatin
 
 Selecting a random employee was the most fun for me in this project. Why? It was a hard one to wrap my mind around. To do this, the names had to be "converted" into a number, then the number randomly selected. Since the names are a part of an array, they have an index value. The index is considered in the parent function and in this case is (const getRandomEmployee = function(employeesArray) {}). Within this function, we create a variable called randomIndex and then perform the following: Multiply using math.floor(math.random() * employeesArray.length). This multiplies the length of array by a random number between 0 and 1. This ensures the generated number is both random and doesn't exceed the length of the array. There after we log the generaterd name with this line (console.log("Random name: " + randomEmployee.firstName + " " + randomEmployee.lastName);).
 
-I did receive assisntace, especially on the verifying salary portion, from the xpert learning assistant that is a part of the bootcamp this assigntment was from. This portion of the code, I belive, in essence ensures the inputted data is a number. When testing out the prompts, if one doesn't input a number when prompted to, the user is infact prompted to submit a valid number. 
+I did receive assisntace, especially on the verifying salary portion, from the xpert learning assistant that is a part of the bootcamp this assigntment was from. This portion of the code, I belive, in essence ensures the inputted data is a number. When testing out the prompts, if one doesn't input a number when prompted to, the user is in fact prompted to submit a valid number. 
+
+deployed page link - https://shyanrafer.github.io/JS-Challenge-1-Collecting-Data/
+
+![alt text](<Screenshot 2024-05-15 at 9.16.59 PM.png>)x
