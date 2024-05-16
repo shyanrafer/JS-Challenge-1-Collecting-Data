@@ -68,7 +68,7 @@ const getRandomEmployee = function(employeesArray) {
     const randomIndex = Math.floor(Math.random() * employeesArray.length);
     const randomEmployee = employeesArray[randomIndex];
     //after the name is selected we display it by adding a string with the value Ranom name and a space, then the first name, then a string with just a space, and finally the last name. The first and last name are added by concatenating the variable randomEployee and its paired key (i think) .firstName - same with last name.
-    console.log("Random name: " + randomEmployee.firstName + " " + randomEmployee.lastName);
+    console.log("Congratulations to " + randomEmployee.firstName + " " + randomEmployee.lastName + " our random drawing winner!");
 }
 
 /*
